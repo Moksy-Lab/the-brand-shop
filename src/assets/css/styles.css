@@ -6,6 +6,9 @@
 .navbar{
     display: contents !important;
 }
+.naiveNavbar .container{
+  padding-left: 0px !important;
+}
 .naiveNavbar .logo{
   height: 80px;
 }
