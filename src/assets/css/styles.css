@@ -33,6 +33,11 @@
     background-color: var(--color-primary);
 }
 
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0px;
+    }
+}
 @media (max-width: 991.98px) {
   .naiveNavbar  .contacts-container{
     margin-left: 15px;
@@ -576,12 +581,15 @@
     animation: scroll 30s linear infinite;
   }
   
-  .codraClients  .logo-slider .logos-slide img {
-    width: 180px;
+  .codraClients .logo-slider .logos-slide img {
+    max-width: 200px;
     height: auto;
     flex-shrink: 0;
     object-fit: contain;
     vertical-align: middle;
+  }
+    .codraClients .logo-slider:hover .logos-slide {
+    animation-play-state: paused;
   }
   @keyframes scroll {
     0% {
@@ -590,9 +598,6 @@
     100% {
       transform: translateX(-50%);
     }
-  }
-  .logo-slider:hover .logos-slide {
-    animation-play-state: paused;
   }
 /* #codra(codraClients) #css ends  */
 
